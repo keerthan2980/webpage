@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rubik+Glitch+Pop&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.log img {
+    height: 7rem;
+    padding:1rem;
+
+}
+.navbar{
+
+   /* background-color: red; */
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height:12hv;
+    width:90%;
+    position:fixed;
+    top:0;
+
+}
+.navlist{
+    display:flex;
+    gap:2em;
+    height:1vh;
+    justify-content:center;
+}
+.navlist li{
+    list-style:none;
+    /*for list of items buttons coloring
+    background:radial-gradient(at top left,#5a4740,#2c1e1e );
+    padding:1rem;
+    border: .1rem solid cornsilk;
+    border-radius:2rem;
+    background-size:cover;
+    /*
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+   */
+}
+
+.navlist a{
+    text-decoration: none;
+    color:white;
+    font-size:1rem;
+    letter-spacing:.08rem;
+    /* this is for coloring of the button
+    background:radial-gradient(at top left,#5a4740,#2c1e1e );
+    border-radius:20rem;
+*/
+
+}
+
+.divide{
+    display:flex;
+}
+
+.divide .dleft {
+    background-color: coral;
+    /* this line is used for spacing from end of the page to content (padding)*/
+    padding-left: 5rem;
+}
+.divide .dright{
+    background-color:indianred;
+    justify-content:center;
+
+}
+.dright img {
+    width:50% ;
+    height:60%;
+    border-radius:1rem solid black;
+}
+.divide .dsame{
+    width:50%;
+   min-height:100vh;
+   /* for text displaying in center*/
+   display:flex;
+   align-items:center;
+   /* we use this two lines*/
+}
+/*
+.navlist .slider {
+    background-color: rgba(255, 255, 255, 0.500);
+    width: 6rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 350px;
+    border-radius: 1rem;
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+    z-index: 0;
+    transition: 0.5s ease-in-out;
+}
+
+
+.navlist li:nth-child(1):hover ~ .slider {
+    right: 305px;
+}
+
+.navlist li:nth-child(2):hover ~ .slider {
+    right: 335px;
+}
+
+.navlist li:nth-child(3):hover ~ .slider {
+    right: 255px;
+}
+
+.navlist li:nth-child(4):hover ~ .slider {
+    right: 105px;
+}
+
+.navlist li:nth-child(5):hover ~ .slider {
+    right: -10px;
+}
+    */
+
+
+.dleft .contentleft{
+    color:white;
+}
+
+.contentleft h1
+     {
+        /*taken from google ushold be import the link in style sheet*/
+        font-family: "Rubik Glitch Pop", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size:5rem;
+        letter-spacing: 1rem;
+      }
+.contentleft  p {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin:1rem;
+
+}
+.contentleft button{
+    background:radial-gradient(at top left,#5a4740,#2c1e1e );
+    padding:1rem;
+    border: .1rem solid cornsilk;
+    border-radius:2rem;
+
+}
+.contentleft button:hover{
+    background:radial-gradient(at top right,#5a4740,#2c1e1e);
+
+}
+.dmiddle{
+     /* for displaying the content in the middle of the page
+     display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center; */
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.dmiddle .circle{
+    width:9rem;
+    height:9rem;
+    background-color:white;
+    border-radius:8rem;
+    background-position:center;
+    background-size:cover;
+
+}
+.dmiddle .circle:nth-child(1){
+    background-image:url(images/coffebeens.jpg);
+}
+.dmiddle .circle:nth-child(2){
+    background-image:url(images/coffeplant.jpg);
+    margin:2rem 0;
+}
+.dmiddle .circle:nth-child(3){
+    background-image:url(images/grocoffeepowder.jpg);
+}
