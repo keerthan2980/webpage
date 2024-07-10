@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* for button */
+        .dbutton{
+            background-color:red;
+            color:white;
+            padding:16px;
+            font-size:16px;
+            border:none;
+            cursor:pointer;
+        }
+        /* main content */
+        .dropbox{
+            position:relative;
+            display:inline-box;
+        }
+        /* inside the content */
+        .inside{
+             display:none;
+             position:absolute;
+             background:green;
+             min-width: 160px;
+            box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          /* list of items */
+         .inside a {
+              color:black;
+              padding:12px 16px;
+              text-decoration:none;
+              display:block;
+             }
+           /* for clicking the changes */
+        .inside a :hover{
+              background-color:green;
+              }
+        .dropbox:hover .inside {
+                  display: block;
+                }
+        .dropbox:hover .dbutton{
+               background-color:hotpink;
+        }
+
+    </style>
+</head>
+<body>
+        <h1> drop box</h1>
+        <div class="dropbox">
+            <button class="dbutton">Drop button</button>
+            <div class="inside">
+                <a href="#1">Link1</a>
+                <a href="#2">Link2</a>
+                <a href="#3">Link3</a>
+            </div>
+
+        </div>
+</body>
+</html>
