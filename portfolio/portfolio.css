@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+ section {
+  min-height: 100vh;
+  padding: 50px;
+  /* margin: 20px 0; */
+  min-height: 100vh; 
+} 
+/* nav bar section start */
+.navbar {
+  background-color: white;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navlist .active {
+  font-weight: bold;
+  border-bottom: 3px solid rgb(32, 182, 32);
+  border-radius: 5px;
+}
+  @media screen and (min-width: 1024px) {
+  .navbar-nav .nav-item {
+    padding: 0 .5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+  }
+  /* nav bar section end */
+                         /* into secction start  */
+section.introsection {
+    padding-top: 72px;
+    /* background-color: #ecf2ff; */
+    /* border:3px solid blue; */
+  }
+  @media screen and (max-width: 576px) {
+    section.introsection {
+      text-align: center;
+    }
+    section.introsecction .img-fluid {
+      width: 80%;
+      
+    }
+  }
+.introtext{
+    /* border:3px solid yellow; */
+    padding-top:95px;
+   
+}
+ .custom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Centering rows and content */
+.custom-row {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Navbar */
+
+/* Intro section */
+section.introsection {
+  padding-top: 72px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.introimage img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Image sizes */
+.aboutimage img,
+.introimage img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 576px) {
+  .introsection h1 {
+      font-size: 1.5rem;
+  }
+
+  .aboutimage img,
+  .introimage img {
+      height: 300px;
+  }
+}
+/* this code is applicable to all the sections in the page */
+ section [class^="container"] {
+    padding: 4rem 2rem;
+  }
+  @media screen and (min-width: 1024px) {
+    section [class^="container"] {
+      padding: 4rem;
+    }
+    nav [class^="container"] {
+      padding: 0 4rem;
+    }
+  }
+  /* all section cod end */
+
+
+  /* intro section end */
+    /*about section   start*/
+    section.aboutsection{
+        padding-top: 72px;   
+    }
+
+    /* skills section */
+   .skillsection .d-flex {
+      transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .skillsection .d-flex:hover {
+     background-color: #f0f0f0;
+      border-color: rgb(32,182,32); /* Color when hovered */
+      box-shadow: 0 0 0 0.2rem rgba(32,182,32,0.25); /* Optional: shadow effect */
+  }
+  /* Target all links inside the .social-media container */
+/* Target all icons within the social-media div */
+.social-media a {
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+}
+
+/* Hover effect for icons */
+.social-media a:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.2); 
+
+}
+/* project section */
+/* Hover effect for project cards */
+.projects .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.projects .card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  border-color: rgb(32,182,32); /* Color when hovered */
+  box-shadow: 0 0 0 0.3rem rgba(32,182,32,0.25); /* shadow effect */
+}
+
+/* Optional: Hover effect for card titles */
+.projects .card-title {
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.projects .card:hover .card-title {
+  color: rgb(32, 182, 32)/* Change title color on hover */
+}
+/* contact hover effect section */
+.contactsection {
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.contactsection:hover {
+  transform: scale(1.02); /* Slightly enlarge the section */
+}
+
+.contactform .form-control:hover {
+  border-color: rgb(32,182,32); /* Color when hovered */
+  box-shadow: 0 0 0 0.2rem rgba(32,182,32,0.25); /* Optional: shadow effect */
+}
+/* background colors */
+/* Background color for the navbar section */
+/* .navbarsection {
+  background-color: #FBF5DF; /* Light grey background *
+} */
+
+/* Background color for the intro section */
+.introsection {
+  background-color: #FFFAFA; /* ANTIFLESH */
+}
+
+/* Background color for the about section */
+.aboutsection {
+  background-color: #F9F6EE; 
+}
+
+/* Background color for the skills section */
+.skillsection {
+  background-color: #F8F7F4 ;
+}
+
+/* Background color for the projects section */
+.projects {
+  background-color: #FFF1E6;
+}
+
+/* Background color for the contact section */
+.contactsection {
+  background-color: #F8F9FA;
+}
+
+/* Background color for the footer */
+footer {
+  background-color: #FFF5EE;
+  color: black; 
+}
+/* Annimations */
+.zoom-in {
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.zoom-in.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.slide-in {
+  opacity: 0; 
+  transition: opacity 1s ease, transform 1s ease;
+}
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in {
+  transform: translateX(-100px); /* Slide in from left */
+}
+/* .slide-up {
+  opacity: 0;
+  transform: translateY(20px); /* Start below 
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.slide-up.active {
+  opacity: 1;
+  transform: translateY(0); /* End at normal position *
+} */
+
+.bounce-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  }
+
+  .bounce-in.active {
+  opacity: 1;
+  transform: scale(1);
+  }
+
+  .slide-down {
+    opacity: 0; 
+    transform: translateY(-100px); /* Start above the container */
+    transition: transform 1s ease, opacity 1s ease; /* Ensure smooth transition */
+}
+
+.slide-down.active {
+    transform: translateY(0); /* End at its original position */
+    opacity: 1;
+}
