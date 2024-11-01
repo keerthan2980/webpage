@@ -251,16 +251,6 @@ footer{
     font-size: larger;
     font-family: "Dancing Script", cursive; 
 }
-footer .leftimg{
-    height:25vh;
-    max-width: 100%
-
-}
- footer .logoimg{
-    height:3rem;
-    /* width:100px; */
-
- }
 
 footer .hover-sup sup {
     display:none;
@@ -274,6 +264,10 @@ footer .hover-sup sup {
  footer i:hover .hover-sup sup {
         display:inline;
 
+}
+
+.logoimg{
+    height: 2.5rem !important;
 }
 /* footer */
 
@@ -330,9 +324,7 @@ footer .hover-sup sup {
         object-fit: cover; 
     }
 
-    footer img{
-        height: 10vh !important;
-    }
+   
     footer {
         font-size: small;
         padding: 8px;
