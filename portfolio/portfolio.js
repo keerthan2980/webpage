@@ -49,7 +49,7 @@ sections.forEach(section => {
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
-                        alert("Your details have been shared with the owner, The Frame Heaven.");
+                        alert("Thank you for considering me for the opportunity. I look forward to hearing about the next steps in the hiring process");
                         window.location.href = "index.html";
                     } else {
                         alert("An error occurred while submitting your details. Please try again later.");
