@@ -187,7 +187,7 @@
                     <div class="card border  rounded-3 d-flex flex-column h-100">
                         <img src="images/gift.jpeg" alt="Gift Frames Website" class="card-img-top img-fluid" style="height: 300px; object-fit: cover;">
                         <div class="card-body d-flex flex-column">
-                            <h3 class="card-title mt-2">Gift Frames Website</h3>
+                            <h3 class="card-title mt-2">The Frame Heaven Website</h3>
                             <div class="mt-auto">
                                 <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project3Modal">More about</button>
                             </div>
@@ -244,7 +244,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Designed and developed a fully functional e-commerce website for customizable gift frames using HTML, CSS, JavaScript ,Bootstrap
+                    Designed and developed a fully functional e-commerce website for customizable gift frames using HTML, CSS, JavaScript ,Bootstrap <a href="https://theframeheaven.netlify.app/" target="_blank">Link</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -262,9 +262,13 @@
         <!-- <h1 class="text-center">Contact <span style="color:rgb(32,182,32)">ME</span></h1> -->
         <!-- Contact form -->
         <div class="contactform text-center col-sm-7 mx-auto">
-          <form action="mailto:keerthankumarbondugula@gmail.com?subject=I saw your portfolio, these are the details" method="POST" enctype="text/plain">
+
+          <form  id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web 3Forms services help you collect details upon submission. -->
+            <input type="hidden" name="access_key" value="0240e2f9-d65a-4347-851b-769eb97b8755">
+
             <div class="form-floating mb-3">
-              <textarea class="form-control" placeholder="Enter your name" id="floatingTextarea" name="name" required></textarea>
+              <textarea class="form-control"  placeholder="Enter your name" id="floatingTextarea" name="name" required></textarea>
               <label for="floatingTextarea">Your Name</label>
             </div>
             <div class="form-floating mb-3">
@@ -272,8 +276,9 @@
               <label for="floatingInput">Your Email</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="number" class="form-control" placeholder="Enter your number" id="floatingNumber" name="number" required>
+              <input type="tel" name="phone" class="form-control" placeholder="Enter your number" id="floatingNumber" name="phone" required>
               <label for="floatingNumber">Your Number</label>
+              <small class="text-danger fs-6 tev" id="phoneError" style="display:none;">Please enter a valid 10-digit phone number without spaces.</small>
             </div>
             <div class="form-floating mb-3">
               <textarea class="form-control" placeholder="Drop your message" id="floatingTextarea2" style="height:250px" name="message" required></textarea>
