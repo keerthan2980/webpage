@@ -85,10 +85,10 @@ a{
             .carousel-caption {
                 top: 15% !important; /* Further adjust caption for smaller screens */
             }
-            h1, h4 {
+            .carousel-caption h1, h4 {
                 font-size: 1.2rem !important; /* Reduce font size further */
             }
-            p {
+            .carousel-caption p {
                 font-size: 0.4rem !important; /* Adjust paragraph font size */
             }
         }
