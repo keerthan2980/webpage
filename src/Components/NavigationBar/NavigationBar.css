@@ -1,0 +1,11 @@
+.navbar-nav .nav-link.active {
+    font-weight: bold; /* Bold text */
+    border-bottom: 3px solid rgb(32, 182, 32); /* Green border at the bottom */
+    border-radius: 5px; /* Border radius for the active link */
+   
+  }
+  /* NavigationBar.css */
+.navbar {
+  background-color: white !important; /* Ensure the navbar remains visible */
+  transition: background-color 0.3s ease;
+}

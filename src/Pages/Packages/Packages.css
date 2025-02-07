@@ -1,0 +1,42 @@
+.destination-item {
+    position: relative;
+  }
+  
+  .destination-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Ensure the overlay appears above the image */
+  }
+  
+  .destination-overlay h5 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .destination-overlay span {
+    font-size: 16px;
+  }
+
+  .destination-item img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .destination-item:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  }
+  
+  .destination-item:hover img {
+    transform: scale(0.9); /* Zoom-out effect */
+    opacity: 0.7; /* Dim the image on hover */ 
+  }

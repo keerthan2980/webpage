@@ -1,0 +1,26 @@
+.search-box{
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    top:-90px;
+    z-index: 12;
+    margin-bottom: -50px;
+    display: flex;
+    align-items: flex-end;
+}
+.search-form {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    position:relative;
+    background-color: white;
+    top:-50x;
+} 
+
+@media (max-width: 440px) { /* For extra small devices */
+    .search-form {
+        width: 80%;
+        padding: 1rem;
+        top: 60%; /* Adjust for very small screens */
+    }
+
+}
+
