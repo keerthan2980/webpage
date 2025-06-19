@@ -63,4 +63,13 @@ sections.forEach(section => {
                 document.getElementById("contactForm").reset();
             });
         });
-        
+// for cloud section
+
+function toggleCloudSkills() {
+    const cloudSection = document.getElementById("cloudSkills");
+    if (cloudSection.style.display === "none") {
+      cloudSection.style.display = "block";
+    } else {
+      cloudSection.style.display = "none";
+    }
+  }
